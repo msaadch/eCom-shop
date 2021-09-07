@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Users_Controller;
+use App\Http\Controllers\Product_Controller;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +20,10 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::view("/","login");
+Route::get('/login', function () {
+         return view('login');
+     });
+
+Route::post("/login",[Users_Controller::class,'login']);
+
+Route::get("/",[Product_Controller::class,'index']);
