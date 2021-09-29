@@ -18,7 +18,39 @@
     .div-login{
         height: 500px;
         padding-top: 100px;
-}
+    }
+    .slider-img{
+        height: 400px !important;
+    }
+    .slider-txt{
+        background:#00000063;
+        width: fit-content;
+        padding: 10px 10px 0 10px;
+        border-radius: 20px;
+    }
+    .carousel-control-prev-icon {
+    background-color: #000;
+    }
+    .carousel-control-next-icon {
+    background-color: #000;
+    }
+    .trend-img{
+        height: 100px;
+    }
+    .detail-img{
+        height: 300px;
+    }
+    .emp-space{
+        height: 70px;
+    }
+    .detail-text {
+    padding-left: 20px;
+    }
+    .search-img{
+        height: 200px;
+    }
+    .link-text{
+        text-decoration: none;
     }
 </style>
 </html>
