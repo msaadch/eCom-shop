@@ -48,4 +48,9 @@ class Product_Controller extends Controller
         $userID=Session::get('user')['id'];
         return Cart::where('user_id',$userID)->count();
     }
+
+    function CartList()
+    {
+        return "Hello";
+    }
 }
