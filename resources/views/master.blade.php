@@ -49,8 +49,16 @@
     .search-img{
         height: 200px;
     }
+    .cart-img{
+        height: 140px;
+    }
     .link-text{
         text-decoration: none;
+    }
+    .divider{
+        border-bottom: solid thin #ccc;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
 </style>
 </html>

@@ -39,11 +39,11 @@ Route::get("search",[Product_Controller::class,'search']);
 
 Route::post("add_to_cart",[Product_Controller::class,'AddToCArt']);
 
-Route::get("cartlist",[Product_Controller::class,'CartList']);
-
-//logout not working
 Route::get("/logout", function(){
     Session::forget('user');
     return redirect('/login');
-    // return "bubye";
 });
+
+Route::get("cartlist",[Product_Controller::class,'CartList']);
+
+Route::get("removecart/{id}",[Product_Controller::class,'RemoveCart']);
